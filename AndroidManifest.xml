@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daily.workout.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Daily_workout_app" >
+        <activity
+            android:name="com.daily.workout.app.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.NoActionBar"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.daily.workout.app.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.daily.workout.app.DetailWorkoutActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/workout_detail" />
+        <activity android:name="com.daily.workout.app.DetailProgramActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/workout_detail" />
+        <activity android:name="com.daily.workout.app.StopWatchActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/stopwatch" />
+        <activity android:name="com.daily.workout.app.AboutActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/about_app" />
+    </application>
+
+</manifest>
